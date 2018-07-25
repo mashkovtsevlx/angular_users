@@ -1,0 +1,5 @@
+<section style="text-align: center" class="main" *ngIf="users.length > 0">
+    <p *ngFor="let user of users">
+      <button mat-raised-button (click)="openDialog(user.id, user.first_name, user.last_name, user.avatar)">{{user.first_name}}  {{user.last_name}}</button>
+    </p>
+</section>
